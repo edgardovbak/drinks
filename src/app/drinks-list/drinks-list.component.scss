@@ -1,0 +1,5 @@
+.drinks-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    grid-gap: 20px; /* Space between grid items */
+}

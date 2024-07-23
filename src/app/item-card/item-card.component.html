@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-image">
+        <img src="{{ drink.strDrinkThumb }}" alt="test">
+    </div>
+    <div class="card-name">
+        <h3> {{ drink.strDrink }} </h3>
+        <div (click)="goToDrinkDetail(drink.idDrink)"
+            class="card-link"
+        >
+            More Information
+        </div>
+    </div>
+</div>

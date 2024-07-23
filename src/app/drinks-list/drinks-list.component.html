@@ -1,0 +1,9 @@
+<h2>Drinks List</h2>
+<div class="drinks-list">
+    <div *ngIf="drinks.length === 0">Loading drinks...</div>
+    <ng-container *ngIf="drinks.length > 0">
+        <ng-container *ngFor="let drink of drinks">
+        <app-item-card [drink]="drink"></app-item-card>
+      </ng-container>
+    </ng-container>
+</div>

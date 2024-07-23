@@ -1,0 +1,41 @@
+<div class="menu" [class.open]="isOpen">
+    <button (click)="toggleMenu()" class="toggle"><</button>
+    <nav>
+        <ul class="alphabet-list">
+            <li *ngFor="let letter of alphabet">
+              <button (click)="selectLetter(letter)">{{ letter }}</button>
+            </li>
+        </ul>
+    </nav>
+
+    <nav>
+        <p>Filter by alcoholic</p>
+        <div>
+              <button (click)="selectFilter('Alcoholic')">Alcoholic</button>
+              <button (click)="selectFilter('Non_Alcoholic')">Non Alcoholic</button>
+              <button (click)="selectFilter('Optional_alcohol')">Optional alcohol</button>
+        </div>
+    </nav>
+
+    <nav>
+        <p>Filter by Category</p>
+        <div>
+              <button (click)="selectFilter('Ordinary_Drink')">Ordinary Drink</button>
+              <button (click)="selectFilter('Cocktail')">Cocktail</button>
+              <button (click)="selectFilter('Shake')">Shake</button>
+              <button (click)="selectFilter('Cocoa')">Cocoa</button>
+              <button (click)="selectFilter('Shot')">Shot</button>
+              <button (click)="selectFilter('Beer')">Beer</button>
+        </div>
+    </nav>
+
+    <nav>
+        <p>Filter by Glass</p>
+        <div>
+              <button (click)="selectFilter('Cocktail_glass')">Cocktail Glass</button>
+              <button (click)="selectFilter('Champagne_flute')">Champagne Flute</button>
+              <button (click)="selectFilter('Jar')">Jar</button>
+              <button (click)="selectFilter('Pitcher')">Pitcher</button>
+        </div>
+    </nav>
+  </div>

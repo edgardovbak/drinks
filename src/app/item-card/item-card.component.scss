@@ -1,0 +1,44 @@
+.card {
+    background-color: #101c27;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+
+    &-image {
+        
+        overflow: hidden;
+        position: relative;
+
+        img {
+            clip-path: circle(100.0% at 50% 0);
+            width: 100%;
+        }
+    }
+
+    &-name {
+        color: #fff;
+
+        font-size: 20px;
+        padding: 20px 20px 63px;
+        position: relative;
+
+        h3 {
+            margin: 0 0 20px;
+        }
+
+        .card-link {
+            padding: 10px;
+            background-color: #ffdd64;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-radius: 5px 0 0 0;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #fff76d;
+            }
+        }
+    }
+}
